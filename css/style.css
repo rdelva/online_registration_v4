@@ -13,6 +13,21 @@ header {
 	color:#fff;
 }
 
+label {
+	color: #6e7d8d;
+}
+
+[placeholder] {
+text-align: right;
+color:#adb2b7;
+font-style: italic;
+
+}
+
+input [value] {
+	text-align: left;
+}
+
 
 [type = "text"],
 [type ="email"],
@@ -24,7 +39,7 @@ textarea
 	width:100%;
 	height:50px;
 	border: none;
-	padding-left:10px;
+	padding:0 10px;
 }
 
 h2 {
