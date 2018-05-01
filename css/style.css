@@ -1,0 +1,99 @@
+* {
+	box-sizing:border-box;
+}
+
+body{
+	font-family: 'Merriweather', serif;
+
+}
+
+header {
+
+	background-color: #2d3945;
+	color:#fff;
+}
+
+
+[type = "text"],
+[type ="email"],
+[type = "tel"], 
+textarea
+ {
+	background-color: #eff0f1;
+	max-width:100%;
+	width:100%;
+}
+
+h2 {
+	text-align: center;
+	font-size:1.2em;
+}
+
+legend {
+	font-size:1.2em;
+	color:#2d3945;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+.directions {
+	border-bottom: 3px solid #2d3945;
+}
+
+.directions p {
+	color:#b1b5b9;
+	text-align: center;
+}
+
+fieldset {
+	border:none;
+	padding: 0px;
+}
+
+
+
+
+.form {
+
+	border-top: 1px solid #2d3945;
+
+}
+
+.wrapper {
+	min-height: calc(100vh-60px);
+}
+
+header .container, .container {
+	margin:0 auto;
+	padding: 1em;
+	max-width: 320px;
+}
+
+.container {
+		margin: 2px  auto;
+		max-width: 320px;
+		padding: 0px;
+
+}
+
+[type="text"] {
+	display: block;
+}
+
+
+
+[name="contactInfo"] {
+
+	border: none;
+
+}
+
+label + [type="text"] {
+	margin-bottom:10px;
+
+}
+
+[name="contactInfo"] label {
+	display: block;
+	padding: 5px 0;
+}
