@@ -86,10 +86,9 @@ fieldset {
 	padding: 0px;
 }
 
-input[type="checkbox"] {
-	background-color:yellow;
 
-}
+
+
 
 button[type="submit"] {
 	background-color: #4ebbb5;
@@ -148,3 +147,6 @@ label + [type="text"], label + select {
 	display: block;
 	padding: 5px 0;
 }
+
+/************************************************
+*Custom Checkkbox
