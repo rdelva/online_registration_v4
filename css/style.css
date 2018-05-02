@@ -17,22 +17,26 @@ label {
 	color: #6e7d8d;
 }
 
-[placeholder] {
+input[type="text"]{
+text-align: left;
+
+
+}
+
+input::placeholder {
 text-align: right;
 color:#adb2b7;
 font-style: italic;
 
 }
 
-input [value] {
-	text-align: left;
-}
 
 
 [type = "text"],
 [type ="email"],
 [type = "tel"], 
-textarea
+textarea,
+select
  {
 	background-color: #eff0f1;
 	max-width:100%;
@@ -40,7 +44,21 @@ textarea
 	height:50px;
 	border: none;
 	padding:0 10px;
+	transition-property: border, background-color;
+	transition-duration: .8s
 }
+
+
+[type = "text"]:focus,
+[type ="email"]:focus,
+[type = "tel"]:focus, 
+textarea:focus
+ {
+ 	border: 1px solid #2d3945;
+ 	background-color: white;
+
+}
+
 
 h2 {
 	text-align: center;
@@ -68,10 +86,12 @@ fieldset {
 	padding: 0px;
 }
 
+:checked {
+	background:yellow;
 
+}
 
-
-.form {
+.contactForm {
 
 	border-top: 1px solid #2d3945;
 
@@ -106,7 +126,7 @@ header .container, .container {
 
 }
 
-label + [type="text"] {
+label + [type="text"], label + select {
 	margin-bottom:10px;
 
 }
