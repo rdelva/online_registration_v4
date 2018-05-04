@@ -162,10 +162,6 @@ button[type="submit"] {
 
 
 
-
-
-
-
 label + [type="text"], label + select  {
 	margin-bottom:10px;
 
@@ -183,6 +179,9 @@ label + [type="text"], label + select  {
 	padding-bottom: 10px;
 }
 
+input[type="checkbox"] label {
+ background-color: yellow;
+}
 /************************************************
 *Custom Checkkbox
 *************************************************/
