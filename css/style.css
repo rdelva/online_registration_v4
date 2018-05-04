@@ -7,10 +7,19 @@ body{
 
 }
 
-header {
+header, footer {
 
 	background-color: #2d3945;
 	color:#fff;
+}
+
+footer .container {
+
+	padding:10px;
+	height:60px;
+	margin-top: 50px;
+	font-style: italic;
+
 }
 
 label {
@@ -44,7 +53,7 @@ select
 	height:50px;
 	border: none;
 	padding:0 10px;
-	transition-property: border, background-color;
+	transition-property: border-bottom, background-color;
 	transition-duration: .8s
 }
 
@@ -54,9 +63,16 @@ select
 [type = "tel"]:focus, 
 textarea:focus
  {
- 	border: 1px solid #2d3945;
+ 	border-bottom: 3px solid #2d3945;
  	background-color: white;
 
+
+}
+
+
+textarea {
+
+	height:200px;
 }
 
 
@@ -148,6 +164,10 @@ label + [type="text"], label + select {
 	padding: 5px 0;
 }
 
+[type="radio"] + label {
+	display: block;
+}
+
 /************************************************
 *Custom Checkkbox
 *************************************************/
@@ -173,18 +193,59 @@ label + [type="text"], label + select {
   bottom: 2px;
 }
 
-:root input[type=checkbox]:checked + label:before {
+:root input[type="checkbox"]:checked + label:before {
   background-position: 0 -16px;
 }
 
-:root input[type=checkbox]:disabled + label:before {
+:root input[type="checkbox"]:disabled + label:before {
   background-position: 0 -32px;
 }
 
-:root input[type=checkbox]:checked:disabled + label:before {
+:root input[type="checkbox"]:checked:disabled + label:before {
   background-position: 0 -48px;
 }
 
-:root input[type=checkbox]:focus + label:before {
+:root input[type="checkbox"]:focus + label:before {
+  outline: 1px dotted black;
+}
+
+/************************************************
+* Custom Radio
+*************************************************/
+:root input[type="radio"] {
+  /* original check box are push outside the viewport */
+  position: absolute;
+  left: -1000em;
+}
+
+:root input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width  : 16px;
+  height : 16px;
+  margin : 0 .5em 0 0;
+  background: url("../images/radio.jpg") no-repeat 0 0;
+
+/* The following is used to adjust the position of 
+   the check boxes on the text baseline */
+
+  vertical-align: bottom;
+  position: relative;
+  bottom: 2px;
+}
+
+:root input[type="radio"]:checked + label:before {
+  background-position: 0 -16px;
+}
+
+:root input[type="radio"]:disabled + label:before {
+  background-position: 0 -32px;
+}
+
+:root input[type="radio"]:checked:disabled + label:before {
+  background-position: 0 -48px;
+}
+
+:root input[type="radio"]:focus + label:before {
   outline: 1px dotted black;
 }
