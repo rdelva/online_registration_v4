@@ -1,3 +1,7 @@
+
+/* Base Styles
+   ========================================================================== */
+
 * {
 	box-sizing:border-box;
 }
@@ -5,6 +9,11 @@
 body{
 	font-family: 'Merriweather', serif;
 
+}
+
+h2 {
+	text-align: center;
+	font-size:1.2em;
 }
 
 header, footer {
@@ -22,15 +31,57 @@ footer .container {
 
 }
 
+.directions {
+	border-bottom: 3px solid #2d3945;
+}
+
+.directions p {
+	color:#b1b5b9;
+	text-align: center;
+}
+
+
+.contactForm {
+
+	border-top: 1px solid #2d3945;
+
+}
+
+.wrapper {
+	min-height: calc(100vh-60px);
+}
+
+header .container, .container {
+	margin:0 auto;
+	padding: 1em;
+	max-width: 320px;
+}
+
+.container {
+		margin: 2px  auto;
+		max-width: 320px;
+		padding: 0px;
+
+}
+
+
+
+/* Form Styles
+   ========================================================================== */
+
+
 label {
 	color: #6e7d8d;
 }
 
 input[type="text"]{
 text-align: left;
+display: block;
 
 
 }
+
+
 
 input::placeholder {
 text-align: right;
@@ -76,10 +127,7 @@ textarea {
 }
 
 
-h2 {
-	text-align: center;
-	font-size:1.2em;
-}
+
 
 legend {
 	font-size:1.2em;
@@ -88,14 +136,7 @@ legend {
 	padding: 20px 0;
 }
 
-.directions {
-	border-bottom: 3px solid #2d3945;
-}
 
-.directions p {
-	color:#b1b5b9;
-	text-align: center;
-}
 
 fieldset {
 	border:none;
@@ -119,42 +160,13 @@ button[type="submit"] {
 
 }
 
-.contactForm {
-
-	border-top: 1px solid #2d3945;
-
-}
-
-.wrapper {
-	min-height: calc(100vh-60px);
-}
-
-header .container, .container {
-	margin:0 auto;
-	padding: 1em;
-	max-width: 320px;
-}
-
-.container {
-		margin: 2px  auto;
-		max-width: 320px;
-		padding: 0px;
-
-}
-
-[type="text"] {
-	display: block;
-}
 
 
 
-[name="contactInfo"] {
 
-	border: none;
 
-}
 
-label + [type="text"], label + select {
+label + [type="text"], label + select  {
 	margin-bottom:10px;
 
 }
@@ -164,20 +176,23 @@ label + [type="text"], label + select {
 	padding: 5px 0;
 }
 
+
+
 [type="radio"] + label {
 	display: block;
+	padding-bottom: 10px;
 }
 
 /************************************************
 *Custom Checkkbox
 *************************************************/
-:root input[type=checkbox] {
+:root input[type="checkbox"] {
   /* original check box are push outside the viewport */
   position: absolute;
   left: -1000em;
 }
 
-:root input[type=checkbox] + label:before {
+:root input[type="checkbox"] + label:before {
   content: "";
   display: inline-block;
   width  : 16px;
