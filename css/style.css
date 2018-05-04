@@ -179,9 +179,12 @@ label + [type="text"], label + select  {
 	padding-bottom: 10px;
 }
 
-input[type="checkbox"] label {
- background-color: yellow;
+input[type="checkbox"] + label {
+display: block;
+padding-bottom:10px;
 }
+
+
 /************************************************
 *Custom Checkkbox
 *************************************************/
