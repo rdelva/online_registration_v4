@@ -11,6 +11,8 @@ body{
 
 }
 
+
+
 h1 {
 	text-align: center;
 }
@@ -32,6 +34,7 @@ footer .container {
 	height:60px;
 	margin-top: 50px;
 	font-style: italic;
+	text-align: center;
 
 }
 
@@ -48,6 +51,8 @@ footer .container {
 .contactForm {
 
 	border-top: 1px solid #2d3945;
+	margin-top:2px;
+
 
 }
 
@@ -55,10 +60,13 @@ footer .container {
 	min-height: calc(100vh-60px);
 }
 
+
 header .container, .container {
 	margin:0 auto;
 	padding: 1em;
 }
+
+
 
 .container {
 		margin: 2px  auto;
@@ -94,7 +102,7 @@ font-style: italic;
 
 
 
-[type = "text"]:not(#zipCode),
+[type = "text"],
 [type ="email"],
 [type = "tel"], 
 textarea,
@@ -112,13 +120,11 @@ select
 
 #zipCode {
 	background-color: #eff0f1;
-	max-width:40%;
-	width:40%;
-	height:50px;
-	border: none;
-	padding:0 10px;
+	max-width:50%;
+	width:50%;
 	transition-property: border-bottom, background-color;
-	transition-duration: .8s
+	transition-duration: .8s;
+
 
 }
 
@@ -126,7 +132,9 @@ select
 [type = "text"]:focus,
 [type ="email"]:focus,
 [type = "tel"]:focus, 
-textarea:focus
+textarea:focus,
+#zipCode:focus,
+select:focus
  {
  	border-bottom: 3px solid #2d3945;
  	background-color: white;
@@ -282,8 +290,16 @@ padding-bottom:10px;
 }
 
 
-@media (min-width: ) {
+@media (min-width:768px){
 
+	.container {
+		max-width: 1024px;
+	}
+
+	.contactForm {
+
+		display: flex;
+	}
 
 
 }
