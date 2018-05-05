@@ -189,10 +189,6 @@ label + [type="text"], label + select  {
 
 }
 
-[name="contactInfo"] label {
-	display: block;
-	padding: 5px 0;
-}
 
 
 
@@ -289,6 +285,7 @@ padding-bottom:10px;
   outline: 1px dotted black;
 }
 
+/*
 
 @media (min-width:768px){
 
@@ -296,10 +293,34 @@ padding-bottom:10px;
 		max-width: 1024px;
 	}
 
-	.contactForm {
+	label > input[type="text"],  
+	label > input[type="tel"],
+	label > input[type="email"] {
 
-		display: flex;
+
+		float:left;
+		width: 300px;
+
+		display: inline-block;
 	}
 
 
+
+	input[type="text"],
+	input[type="tel"],
+	input[type="email"]
+	{
+		background-color: yellow;
+		width: 70%;
+		float: right;
+	}
+
+	label > input[type="text"],  
+	label > input[type="tel"],
+	label > input[type="email"] {
+
+
+	}
+
 }
+*/
